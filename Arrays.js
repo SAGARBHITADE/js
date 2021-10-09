@@ -164,13 +164,13 @@ if (jon.indexOf(userinput) >= 0) {
 }
 else {
     console.log("not present")
-}
+     }
 
 
 console.log("-----------------------------")
 
 let bill = [2000, 2006, 2007, 2009]
-
+//Calls a defined callback function on each element of an array, and returns an array that contains the results
 let raam = bill.map(function (el, index, arr) {
     return 2021 - el
 })
@@ -210,32 +210,32 @@ console.log(romanwith1)
 
 // map reduce filter find fiendindex
 
-let roc = ["sam", "sunil", "sand", "roy"]
-//console.log(roc[3].length)
-let rocc = roc.findIndex(function (el, index, arr) {
+    let roc = ["sam", "sunil", "sand", "roy"]
+    //console.log(roc[3].length)
+    let rocc = roc.findIndex(function (el, index, arr) {
     return el.length > 4
 })
-console.log(rocc)
+    console.log(rocc)
 
 
-let djj = [[5, 15,21, 6], [8, 6, 9]]
+    let djj = [[5, 15,21, 6], [8, 6, 9]]
 
-console.log(djj[0])
-console.log(djj[1])
+    console.log(djj[0])
+    console.log(djj[1])
 
-let gh = djj.flat()
+    let gh = djj.flat()
 
-console.log(gh)
-console.log("+++++++++++++++++++++++++++++++")
-let zg=[19,33,10,55,66]
+    console.log(gh)
+    console.log("+++++++++++++++++++++++++++++++")
+    let zg=[19,33,10,55,66]
 
-let st=zg.some(function(el,index,arr){
+    let st=zg.some(function(el,index,arr){
 
     return el<33
 })
 
 
-console.log(st)
+    console.log(st)
   //  0  1   2  3 4  5  6   7 8  9  10 11 12 13 14  
 let fill1 = [1, 2, a, a, a, a, a, a, a, a, a, a, a, a, a]
 let fill12 = fill1.fill(2,2, fill1.length)
@@ -257,8 +257,6 @@ let zm=roc.forEach(function(el,index,arr){
     console.log('welcome',el)
 })
 
-
-
 let age = [11,13,14,45,45,66]
 
 let hm=age.some(function(el,index,arr){
@@ -266,9 +264,61 @@ let hm=age.some(function(el,index,arr){
 })
 console.log(hm)
 
-
+// need to understand this mathod 
 let rm=age.every(function(el,index,arr){
 
     return el < 13
 })
 console.log(rm)
+
+
+let billdiscount=[3000,2000,2500,3500]
+let pay= billdiscount.map(function(el,index,arr)
+ {
+     return el-(el*10/100)
+ })
+ console.log(pay)
+//[ 2700, 1800, 2250, 3150 ]
+
+let discountAns=billdiscount.reduce(function(acc,el)
+{
+    return el*0.10+acc
+},0)
+console.log(discountAns)
+
+//1100
+
+ let discountTotal=billdiscount.reduce(function(arr,el,index){
+     return el-(el*10/100)+arr
+ },0)
+ console.log(discountTotal)
+//9900
+ let teamm=["sachi","virat","dhoni","balaji"]
+//Returns the elements of an array that meet the condition specified in a callback function.
+ let team1=teamm.filter(function(el,index,arr){
+
+    return el.length==6
+ })
+ console.log(team1)
+
+
+let pageNumber=[10,15,20,25,30,28,33,37,39]
+
+//[true,true ,true ,false,false ,true ,false, false] // 20-33        
+let pagen=pageNumber.map(function(el,index,arr){
+    return el>=20 && el<=33
+})      
+console.log(pagen)
+//   [
+//     false, false, true,
+//     true,  true,  true,
+//     true,  false, false
+//   ]
+
+
+
+
+
+
+
+
