@@ -69,5 +69,44 @@ let s=nik(2,6)
 console.log(s)
 
 console.log('-----------')
-let name1="sagar"
-consol.log(typeof name1)
+
+
+
+let friend = ["rajveer", "prashant", "kalyan", "nikita", "pooja"]
+let ry = []
+//console.log(friend[0])
+for (let h = 0; h < friend.length; h++) {
+    //console.log(friend[h])
+    ry.push(friend[h])
+}
+
+console.log(ry)
+
+
+
+let rama=[15,20,10,11,21]
+let rr=[0]
+for(let i=0;i<rama.length;i++){
+  
+rr=rama[i]<rr
+ //rr.push(rama[i])
+
+  
+  //console.log(rr)
+   
+}
+console.log(rr)
+
+
+
+
+let data1 = [5000, 6000, 5200, 7000]
+
+let data2=data1.map(function(el,index,arr){
+
+  return el=el*10/100
+
+})
+console.log(data2)
+
+

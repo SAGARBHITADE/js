@@ -22,6 +22,8 @@ function nik(a,b)
     console.log(a+b)
 }
 nik(10,10)
+
+
 function row(a,b)
 {
     return(a+b)

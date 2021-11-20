@@ -87,7 +87,7 @@ for (let i = 0; i < book.length; i++) {
         console.log(obj[key])
     }
 }
-
+console.log("---------------------------")
 let object2=[
     {
         collorName:"red",
@@ -105,5 +105,8 @@ for(let m=0;m<object2.length;m++)
     let obj1=object2[m]
     for(let key in obj1){
         console.log(key,obj1[key])
-    }
+    
+    }      
 }
+
+
